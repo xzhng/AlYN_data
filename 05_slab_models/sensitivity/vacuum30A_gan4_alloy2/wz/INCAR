@@ -1,0 +1,31 @@
+SYSTEM = GaN4/alloy2 wz; nodip vacuum static
+
+GGA    = PE
+PREC   = Accurate
+ENCUT  = 500
+EDIFF  = 1E-7
+
+ISMEAR = 0
+SIGMA  = 0.05
+ALGO   = Normal
+NELM   = 400
+NELMIN = 6
+AMIN   = 0.01
+
+ISTART = 0
+ICHARG = 2
+IBRION = -1
+NSW    = 0
+ISYM   = 0
+
+LDIPOL = .FALSE.
+
+LASPH   = .TRUE.
+ADDGRID = .TRUE.
+LREAL   = .FALSE.
+LMAXMIX = 4
+LPLANE  = .TRUE.
+KPAR    = 2
+NCORE   = 8
+LWAVE   = .FALSE.
+LCHARG  = .FALSE.

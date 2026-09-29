@@ -1,0 +1,26 @@
+SYSTEM = WZ GaN; a=3.50 A fixed; internal relaxation at fixed c
+
+GGA    = PE
+PREC   = Accurate
+ENCUT  = 500
+EDIFF  = 1E-8
+EDIFFG = -1E-4
+
+ISMEAR = 0
+SIGMA  = 0.05
+ALGO   = Normal
+NELM   = 200
+NELMIN = 6
+
+IBRION = 2
+POTIM  = 0.5
+NSW    = 60
+ISIF   = 2
+
+LASPH   = .TRUE.
+ADDGRID = .TRUE.
+LREAL   = .FALSE.
+NCORE   = 4
+KPAR    = 4
+LWAVE   = .FALSE.
+LCHARG  = .FALSE.

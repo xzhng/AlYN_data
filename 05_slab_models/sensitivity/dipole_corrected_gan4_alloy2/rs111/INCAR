@@ -1,0 +1,36 @@
+SYSTEM = GaN4/Y0.8Al0.2N2 RS(111); dipole-corrected relaxation
+
+GGA    = PE
+PREC   = Accurate
+ENCUT  = 500
+EDIFF  = 1E-6
+EDIFFG = -5E-3
+
+ISMEAR = 0
+SIGMA  = 0.05
+ALGO   = Normal
+NELM   = 400
+NELMIN = 6
+AMIN   = 0.01
+
+ISTART = 1
+ICHARG = 0
+IBRION = 1
+POTIM  = 0.5
+NSW    = 60
+ISIF   = 2
+ISYM   = 0
+
+LDIPOL = .TRUE.
+IDIPOL = 3
+DIPOL  = 0.5 0.5 0.522255326
+
+LASPH   = .TRUE.
+ADDGRID = .TRUE.
+LREAL   = .FALSE.
+LMAXMIX = 4
+LPLANE  = .TRUE.
+KPAR    = 2
+NCORE   = 8
+LWAVE   = .TRUE.
+LCHARG  = .FALSE.

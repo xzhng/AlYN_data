@@ -1,0 +1,27 @@
+SYSTEM = unsupported Y0.8Al0.2N alloy3 wz; a=3.50 A; alloy free, pseudo-H fixed
+
+GGA    = PE
+PREC   = Accurate
+ENCUT  = 500
+EDIFF  = 1E-6
+EDIFFG = -5E-3
+
+ISMEAR = 0
+SIGMA  = 0.05
+ALGO   = Normal
+NELM   = 200
+NELMIN = 6
+
+IBRION = 1
+NSW    = 100
+ISIF   = 2
+ISYM   = 0
+
+LASPH   = .TRUE.
+ADDGRID = .TRUE.
+LREAL   = .FALSE.
+LMAXMIX = 4
+LPLANE  = .TRUE.
+KPAR    = 2
+LWAVE   = .TRUE.
+LCHARG  = .FALSE.

@@ -1,0 +1,4 @@
+Read transformation matrix from the TRANSMAT.in file if it exists.
+  4  0  0   # wurtzite primitive -> SQS supercell
+  2  4  0   # wurtzite primitive -> SQS supercell
+  0  0  2   # wurtzite primitive -> SQS supercell

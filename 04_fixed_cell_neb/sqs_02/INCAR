@@ -1,0 +1,39 @@
+SYSTEM = YAlN sqs_02 fixedNEB3 zero-spring perpendicular QM precondition
+
+# Electronic structure
+ISTART = 0
+ICHARG = 2
+PREC = Accurate
+ENCUT = 500
+EDIFF = 1E-6
+ISMEAR = 0
+SIGMA = 0.005
+ALGO = Normal
+NELM = 150
+NELMIN = 5
+NBANDS = 640
+ISYM = 0
+LASPH = .TRUE.
+ADDGRID = .TRUE.
+LREAL = .FALSE.
+LPLANE = .TRUE.
+LWAVE = .FALSE.
+LCHARG = .FALSE.
+KPAR = 8
+NPAR = 4
+
+# Controlled segment
+EDIFFG = -0.01
+NSW = 5
+
+# Fixed-cell, nonclimbing VTST NEB
+ISIF = 2
+ICHAIN = 0
+IMAGES = 3
+SPRING = 0
+LCLIMB = .FALSE.
+IBRION = 3
+POTIM = 0
+IOPT = 3
+TIMESTEP = 0.02
+MAXMOVE = 0.03

@@ -1,0 +1,12 @@
+# Licensed VASP pseudopotentials and large restart files must not be committed.
+POTCAR
+WAVECAR
+CHGCAR
+CHG
+vaspout.h5
+vasprun.xml
+
+# Common local files
+.DS_Store
+__pycache__/
+

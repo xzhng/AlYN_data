@@ -1,0 +1,25 @@
+archive_section,original_source,role
+01_bulk_properties/wz_alloy_pbe,YAlN/wurtzite/Y_0.796875_Al_0.203125/sqs_*/vasp,PBE WZ SQS relaxations
+01_bulk_properties/rs_alloy_pbe,YAlN/rocksalt/Y_0.796875_Al_0.203125/sqs_*/vasp,PBE RS SQS relaxations
+01_bulk_properties/wz_alloy_hse,YAlN/hse_local/Y_0.796875_Al_0.203125/sqs_*,HSE WZ SQS relaxations
+01_bulk_properties/endmembers/AlN_wz_pbe,YAlN/relax/AlN/PBE/VOL_1.03391,PBE WZ AlN reference
+01_bulk_properties/endmembers/AlN_wz_hse,YAlN/relax/AlN/HSE/VOL_1.00034,HSE WZ AlN reference
+01_bulk_properties/endmembers/YN_wz_pbe,YAlN/relax/YN/PBE/VOL_0.95173,PBE WZ YN
+01_bulk_properties/endmembers/YN_wz_hse,YAlN/relax/YN/HSE/VOL_0.93808,HSE WZ YN
+01_bulk_properties/endmembers/YN_rs_pbe,YAlN/relax/YN_RS/PBE/VOL_1.00339,PBE RS YN reference
+01_bulk_properties/endmembers/YN_rs_hse,YAlN/relax/YN_RS/HSE/VOL_0.98713,HSE RS YN reference
+01_bulk_properties/EOS,YAlN/relax/{AlN,YN,YN_RS}/{PBE,HSE}/VOL_*,End-member equation-of-state grids
+02_hse_band_unfolding/scf,YAlN/hse_local/Y_0.796875_Al_0.203125/sqs_01/bands/scf,HSE charge-density calculation
+02_hse_band_unfolding/unfold,YAlN/hse_local/Y_0.796875_Al_0.203125/sqs_01/bands/unfold,HSE effective-band-structure calculation and unfolding
+03_berry_polarization,YAlN/Ferro/end_image/sqs_*/05_polarization_path_fixed_cell,Five 33-point fixed-structure Berry-phase paths
+04_fixed_cell_neb/sqs_01,YAlN/Ferro/fixed_neb_3images_aligned/sqs_01,Main-text NEB path
+04_fixed_cell_neb/sqs_02,YAlN/Ferro/fixed_neb_3images_aligned/sqs_02/retained_states/spring0_converged_job_58491611,SI-only retained SPRING=0 NEB path
+04_fixed_cell_neb/sqs_03,YAlN/Ferro/fixed_neb_3images_aligned/sqs_03_spring1,Main-text NEB path
+04_fixed_cell_neb/sqs_04,YAlN/Ferro/fixed_neb_3images_aligned/sqs_04,Main-text NEB path
+04_fixed_cell_neb/sqs_05,YAlN/Ferro/fixed_neb_3images_aligned/sqs_05_spring1,Main-text NEB path
+05_slab_models/GaN_supported,YAlN/interface_proxy_ordered80/slab/a_3.50_relax/gan4_alloy*,GaN-supported ordered alloy slabs
+05_slab_models/alloy_only,YAlN/interface_proxy_ordered80/slab_alloy_only/alloy*,Alloy-only slabs derived from supported geometries
+05_slab_models/strained_GaN_reference,YAlN/interface_proxy_ordered80/slab/a_3.50_relax/gan_bulk/final,Strained bulk GaN reference used for fixed bottom bilayers
+05_slab_models/sensitivity/gan6_alloy2,YAlN/interface_proxy_ordered80/slab/a_3.50_relax/gan6_alloy2,GaN-thickness test
+05_slab_models/sensitivity/vacuum30A_gan4_alloy2,YAlN/interface_proxy_ordered80/slab/a_3.50_relax/vacuum_check/gan4_alloy2/*/nodip_vac30,Vacuum-thickness test
+05_slab_models/sensitivity/dipole_corrected_gan4_alloy2,YAlN/interface_proxy_ordered80/slab/a_3.50_relax/dipole_relax/gan4_alloy2,Dipole-correction test with consistent relaxation
